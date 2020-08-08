@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-7</title>
+    <style>
+    * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #container {
+            /* border: solid black;*/
+            /*padding: 40px;*/
+            width: 1200px;
+            border: solid lightgrey;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        
+        #header {
+            background-color: rgb(48, 48, 48);
+            height: 70px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+        
+        #content {
+            /* border: 5px solid red;*/
+        }
+        
+        #content::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        #Banner {
+            background-color: skyblue;
+            height: 700px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+        
+        #Section-1 {
+            background-color: white;
+            height: 70px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: black;
+        }
+        
+        #Section-2 {
+            height: 350px;
+            /*border: solid blue;*/
+            font-size: 40px;
+            text-align: center;
+            color: black;
+        }
+        
+        #a {
+            border-radius: 60%;
+            width: 20%;
+            height: 250px;
+            float: left;
+            background-color: orange;
+            margin: 2.5%;
+        }
+        
+        #b {
+            border-radius: 60%;
+            width: 20%;
+            height: 250px;
+            float: left;
+            background-color: orange;
+            margin: 2.5%;
+        }
+        
+        #c {
+            border-radius: 60%;
+            width: 20%;
+            height: 250px;
+            float: left;
+            background-color: orange;
+            margin: 2.5%;
+        }
+        
+        #d {
+            border-radius: 60%;
+            width: 20%;
+            height: 250px;
+            float: left;
+            background-color: orange;
+            margin: 2.5%;
+        }
+        
+        #part-2 {
+            background-color: white;
+            height: 70px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: solid black;
+        }
+        
+        #Section-3 {
+            height: 500px;
+        }
+        
+        #left {
+            height: 500px;
+            width: 48%;
+            background-color: rgba(37, 35, 35, 0.904);
+            float: left;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-align: centre;
+            font-size: 40px;
+            color: white;
+        }
+        
+        #right {
+            width: 48%;
+            /* border: solid green;*/
+            height: 500px;
+            float: right;
+            /* background-color: goldenrod;*/
+        }
+        
+        #a1 {
+            height: 150px;
+            width: auto;
+            background-color: rgb(204, 36, 64);
+            margin: 15px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-align: centre;
+            font-size: 40px;
+            color: white;
+        }
+        
+        #a2 {
+            height: 150px;
+            width: auto;
+            background-color: rgb(204, 36, 64);
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: centre;
+            font-size: 40px;
+            color: white;
+        }
+        
+        #a3 {
+            height: 150px;
+            width: auto;
+            background-color: rgb(204, 36, 64);
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: centre;
+            font-size: 40px;
+            color: white;
+        }
+        
+        #part-3 {
+            background-color: white;
+            height: 70px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: solid black;
+        }
+        
+        #Section-4 {
+            height: 400px;
+        }
+        
+        #p {
+            width: 20%;
+            height: 300px;
+            float: left;
+            background-color: rgb(255, 0, 0);
+            margin: 2.5%;
+        }
+        
+        #q {
+            width: 20%;
+            height: 300px;
+            float: left;
+            background-color: red;
+            margin: 2.5%;
+        }
+        
+        #r {
+            width: 20%;
+            height: 300px;
+            float: left;
+            background-color: red;
+            margin: 2.5%;
+        }
+        
+        #s {
+            width: 20%;
+            height: 300px;
+            float: left;
+            background-color: red;
+            margin: 2.5%;
+        }
+        
+        #part-4 {
+            background-color: white;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            color: solid black;
+        }
+        
+        #footer {
+            background-color: rgb(216, 121, 195);
+            height: 70px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">Header</div>
+        <div id="content">
+            <div id="Banner">Banner</div>
+            <div id="Section-1"><b>Section-1</b></div>
+            <div id="Section-2">
+                <div id="a"></div>
+                <div id="b"></div>
+                <div id="c"></div>
+                <div id="d"></div>
+            </div>
+            <div id="part-2"><b>Section-2</b></div>
+            <div id="Section-3">
+                <div id="left">Main Content</div>
+                <div id="right">
+                    <div id="a1">Artical-1</div>
+                    <div id="a2">Artical-2</div>
+                    <div id="a3">Artical-3</div>
+                </div>
+            </div>
+            <div id="part-3"><b>Section-3</b></div>
+            <div id="Section-4">
+                <div id="p"></div>
+                <div id="q"></div>
+                <div id="r"></div>
+                <div id="s"></div>
+            </div>
+            <div id="part-4"><b>Section-4</b></div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+
+</html>
