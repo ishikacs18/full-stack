@@ -20,12 +20,16 @@
         #header {
             background-color: rgb(48, 48, 48);
             height: 70px;
-            width: auto;
+            width: 1350px;
             margin-bottom: 15px;
+            position: fixed;
+            top: 0px;
+            z-index: 5;
         }
         
         #content {
             /* border: 5px solid red;*/
+            margin-top: 90px;
         }
         
         #content::after {
@@ -99,7 +103,7 @@
         }
         
         #Section-3 {
-            height: 500px;
+            height: 580px;
         }
         
         #left {
@@ -178,7 +182,7 @@
         }
         
         #Section-4 {
-            height: 500px;
+            height: 580px;
         }
         
         .card {
@@ -262,6 +266,11 @@
         #header ul {
             list-style: none;
             float: right;
+            position: fixed;
+            top: 0px;
+            z-index: 5;
+            background-color: black;
+            width: 1350px;
         }
         
         #header ul li {
@@ -278,10 +287,19 @@
             padding: 0px 60px;
         }
         
+        #header ul li a:hover {
+            color: black;
+            background-color: whitesmoke;
+        }
+        
         #p img {
             margin: 10px;
             width: 93%;
             height: 180px;
+        }
+        
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -291,9 +309,9 @@
         <div id="header">
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#team">TEAM</a></li>
-                <li><a href="#tech">TECHNOLOGIES</a></li>
+                <li><a href="#part-2">ABOUT US</a></li>
+                <li><a href="#Section-2">TEAM</a></li>
+                <li><a href="#part-3">TECHNOLOGIES</a></li>
                 <li><a href="#footer">CONTACT</a></li>
             </ul>
         </div>
@@ -305,20 +323,22 @@
                 </div>
             </div>
             <br>
-            <br>
-            <p style="text-align: center; font-weight: 80px; font-size: 40px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><b>Team Member</b></p>
+
             <div id="Section-2">
+                <p style="text-align: center; font-weight: 80px; font-size: 40px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><b>Team Member</b></p>
                 <div id="a"><img src="img/1.png" class="pic"></div>
                 <div id="b"><img src="img/2.png" class="pic"></div>
                 <div id="c"><img src="img/3.png" class="pic"></div>
                 <div id="d"><img src="img/4.png" class="pic"></div>
             </div>
-            <div id="part-2"><b>About us</b></div>
+            <br><br>
+
             <div id="Section-3">
+                <div id="part-2"><b>About us</b></div>
                 <div id="left">
                     <h2>About Projects</h2>
                     <br>
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse deserunt voluptas amet voluptatem ipsam ipsum quidem praesentium itaque, libero aliquid dolores? Maiores perspiciatis consequatur, consectetur harum aut, quae soluta
+                    <p style="text-align: justify; margin: 0px 15px 15px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse deserunt voluptas amet voluptatem ipsam ipsum quidem praesentium itaque, libero aliquid dolores? Maiores perspiciatis consequatur, consectetur harum aut, quae soluta
                         molestiae itaque consequuntur veritatis fuga unde deserunt. Labore, obcaecati, cupiditate neque soluta at rerum enim non animi harum beatae repudiandae. Laboriosam vitae et culpa qui. Dolore, non? Animi debitis natus tempora consequuntur!
                         Voluptas nobis maxime nemo consequuntur quae magni earum, unde officiis repellendus repudiandae sed recusandae quisquam veritatis labore tempore dignissimos, perspiciatis, id provident. Similique sed impedit repellendus corrupti
                         maiores natus fugit est vero consequuntur facere, magni hic ipsam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eos perferendis veritatis assumenda? Similique minima doloremque repellendus cupiditate enim quos
@@ -330,28 +350,29 @@
                     <div id="a3"><img src="img/p3.jpg" style="height:100%; width:100%;"></div>
                 </div>
             </div>
-            <div id="part-3"><b>Technology Used</b></div>
+
             <div id="Section-4 ">
+                <div id="part-3"><b>Technology Used</b></div>
                 <div class="card">
-                    <img style="border-radius:10px;" width="300px" height="200px" src="img/HTML.png" alt="html">
+                    <img style="border-radius:10px;" width="300px" height="200px" src="img/HTML.PNG" alt="html">
                     <h4 style="text-align:center;font-weight: bold;">Introduction to HTML</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum distinctio culpa suscipit laboriosam at incidunt amet, reiciendis cupiditate totam inventore? </p>
                     <a href="Practical-5-html.html">Read More</a>
                 </div>
                 <div class="card">
-                    <img style="border-radius:10px;" width="300px" height="200px" src="img/CSS.png" alt="css">
+                    <img style="border-radius:10px;" width="300px" height="200px" src="img/CSS.PNG" alt="css">
                     <h4 style="text-align:center;font-weight: bold;">Introduction to CSS</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum distinctio culpa suscipit laboriosam at incidunt amet, reiciendis cupiditate totam inventore? </p>
                     <a href="Practical-5-css.html">Read More</a>
                 </div>
                 <div class="card">
-                    <img style="border-radius:10px;" width="300px" height="200px" src="img/JS.png" alt="javascript">
+                    <img style="border-radius:10px;" width="300px" height="200px" src="img/JS.PNG" alt="javascript">
                     <h4 style="text-align:center;font-weight: bold;">Introduction to JavaScript</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum distinctio culpa suscipit laboriosam at incidunt amet, reiciendis cupiditate totam inventore? </p>
                     <a href="Practical-5-js.html">Read More</a>
                 </div>
                 <div class="card">
-                    <img style="border-radius:10px;" width="300px" height="200px" src="img/BS.png" alt="bootstrap">
+                    <img style="border-radius:10px;" width="300px" height="200px" src="img/BS.PNG" alt="bootstrap">
                     <h4 style="text-align:center;font-weight: bold;">Introduction to Bootstrap</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum distinctio culpa suscipit laboriosam at incidunt amet, reiciendis cupiditate totam inventore? </p>
                     <a href="Practical-5-bs.html">Read More</a>
